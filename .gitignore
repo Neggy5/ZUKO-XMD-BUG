@@ -1,0 +1,12 @@
+node_modules/
+tmp/
+logs/
+*.log
+.env
+
+# Persistent runtime data — lives on the Railway volume, not in git.
+# Keeping these out of git prevents an old committed copy from ever
+# overwriting real session/pairing data on deploy.
+storage/database.json
+storage/session-data/*
+!storage/session-data/.gitkeep
